@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Lillique</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="page-wrapper">
+<header class="main-header">
+    <div class="header-logo">The Lillique</div>
+    <p class="tagline">A little home between hunger and heart</p>
+</header>
+
+<nav class="navbar">
+    <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="reservation.html">Reservation</a>
+        <a href="events.html">Events</a>
+    </div>
+</nav>
+<section class="text">
+    <div class="text-content">
+        <span class="text-sub">Comfort that shimmers with love</span>
+        <h1>Sunlit Flavors & Ecstatic Vibes</h1>
+        <p>Step away from the rush. Gather around our table for artisan, scratch-made comfort food.</p>
+        <a href="menu.html" class="text-btn">Explore Menu</a>
+    </div>
+    <div class="text-img-wrapper">
+        <!--arch-->
+        <div class="arch-frame animate-drift">
+        <img src="https://img.magnific.com/premium-vector/hand-drawn…solated-white-cooking-icons_148899-472.jpg?w=1480" alt="Boho signature dish" class="text-img">
+    </div>
+    <!--badge-->
+    <div class="badge-container">
+        <svg class="rotating-badge" viewBox="0 0 100 100">
+        <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none"/>
+        <text font-size="10" font-family="Playfair Display" font-weight="bold"  fill="#4A3E3D" letter-spacing="4">
+        <textPath href="#circlePath">&#x2022 TASTE &#x2022 GATHER &#x2022 ENJOY</textPath>
+        </text>
+        </svg>
+    </div>
+    </div>
+</section>
+
+<section class="container">
+    <div class="section-title">
+        <span>COOKED WITH CARE</span>
+        <h2>Our Most Loved</h2>
+        <div class="boho-divider"><span>✿</span></div>
+    </div>
+
+    <div class="grid">
+        <!--pizza -->
+        <div class="card">
+            <div class="img-container">
+                <img src="images/pizza.jpeg" alt="Artisan Pizza">
+            </div>
+            <div class="card-content">
+                <h3>Sourdough Pizzas</h3>
+                <p class="category-desc">Wild yeast crust, heirloom tomatoes, fresh pulled mozzarella.</p>
+                
+                <div class="menu-item-row">
+                    <span class="item-name">Margarita Garden</span>
+                    <p>&#x20B9 345</p>
+                    <button class="btn" onclick="orderItem('Margarita Pizza')">Order</button>
+                </div>
+                <div class="menu-item-row">
+                    <span class="item-name">Rustic Paneer Pizza</span>
+                    <p>&#x20B9 395</p>
+                    <button class="btn" onclick="orderItem('Paneer Pizza')">Order</button>
+                </div>
+                <div class="menu-item-row">
+                    <span class="item-name">Sweet Red Pepper</span>
+                    <p>&#x20B9 375</p>
+                    <button class="btn" onclick="orderItem('Red pepper')">Order</button>
+                </div>
+            </div>
+        </div>
+
+        <!--Burger-->
+        <div class="card">
+            <div class="img-container">
+                <img src="images/burger.jpeg" alt="Gourmet Burger">
+            </div>
+            <div class="card-content">
+                <h3>House Burgers</h3>
+                <p class="category-desc">Served on house-baked sweet potato brioche with crisp greens.</p>
+                
+                <div class="menu-item-row">
+                    <span class="item-name">Harvest Veg Burger</span>
+                    <p>&#x20B9 195</p>
+                    <button class="btn" onclick="orderItem('Veg Burger')">Order</button>
+                </div>
+                <div class="menu-item-row">
+                    <span class="item-name">Spiced Paneer Burger</span>
+                    <p>&#x20B9 245</p>
+                    <button class="btn" onclick="orderItem('Paneer Burger')">Order</button>
+                </div>
+                <div class="menu-item-row">
+                    <span class="item-name">Umami Korean Burger</span>
+                    <p>&#x20B9 275</p>
+                    <button class="btn" onclick="orderItem('Korean Burger')">Order</button>
+                </div>
+            </div>
+        </div>
+
+        <!--Pasta-->
+        <div class="card">
+            <div class="img-container">
+                <img src="images/pasta.jpeg" alt="Handmade Pasta">
+            </div>
+            <div class="card-content">
+                <h3>Handmade Pasta</h3>
+                <p class="category-desc">Freshly rolled daily, tossed gently with aromatic garden herbs.</p>
+                
+                <div class="menu-item-row">
+                    <span class="item-name">Sun-dried Red Sauce</span>
+                    <p>&#x20B9 295</p>
+                    <button class="btn" onclick="orderItem('Red Sauce Pasta')">Order</button>
+                </div>
+                <div class="menu-item-row">
+                    <span class="item-name">Slow-Simmered Alfredo</span>
+                    <p>&#x20B9 325</p>
+                    <button class="btn" onclick="orderItem('White Sauce Pasta')">Order</button>
+                </div>
+                <div class="menu-item-row">
+                    <span class="item-name">Three-Cheese Herb</span>
+                    <p>&#x20B9 345</p>
+                    <button class="btn" onclick="orderItem('Veg Cheese Pasta')">Order</button>
+                </div>
+            </div>
+        </div>
+
+        <!--Fries-->
+        <div class="card">
+            <div class="img-container">
+                <img src="images/fries.jpeg" alt="Handcut Fries">
+            </div>
+            <div class="card-content">
+                <h3>Handcut Wedges</h3>
+                <p class="category-desc">Skin-on local potatoes, triple cooked and lightly tossed.</p>
+                
+                <div class="menu-item-row">
+                    <span class="item-name">Sea Salt & Rosemary</span>
+                    <p>&#x20B9 125</p>
+                    <button class="btn" onclick="orderItem('Basic Fries')">Order</button>
+                </div>
+                <div class="menu-item-row">
+                    <span class="item-name">Smoked Peri Peri</span>
+                    <p>&#x20B9 145</p>
+                    <button class="btn" onclick="orderItem('Peri Peri')">Order</button>
+                </div>
+                <div class="menu-item-row">
+                    <span class="item-name">Warm Cheese Fondue Fries</span>
+                    <p>&#x20B9 185</p>
+                    <button class="btn" onclick="orderItem('Cheese Fries')">Order</button>
+                </div>
+            </div>
+        </div>
+
+        <!--Coffee-->
+        <div class="card">
+            <div class="img-container">
+                <img src="images/coffee.jpeg" alt="Pour Over Coffee">
+            </div>
+            <div class="card-content">
+                <h3>Slow Bar Coffee</h3>
+                <p class="category-desc">Ethically sourced, sun-dried beans with distinct floral notes.</p>
+                
+                <div class="menu-item-row">
+                    <span class="item-name">Oat Milk Iced Latte</span>
+                    <p>&#x20B9 165</p>
+                    <button class="btn" onclick="orderItem('Iced latte')">Order</button>
+                </div>
+                <div class="menu-item-row">
+                    <span class="item-name">Vintage French Press</span>
+                    <p>&#x20B9 120</p>
+                    <button class="btn" onclick="orderItem('Black coffee')">Order</button>
+                </div>
+                <div class="menu-item-row">
+                    <span class="item-name">Honey Sea Salt Cold Brew</span>
+                    <p>&#x20B9 150</p>
+                    <button class="btn" onclick="orderItem('Cold coffee')">Order</button>
+                </div>
+            </div>
+        </div>
+
+        <!--Momos-->
+        <div class="card">
+            <div class="img-container">
+                <img src="images/momo.jpeg" alt="Steamed Dumplings">
+            </div>
+            <div class="card-content">
+                <h3>Artisan Dumplings</h3>
+                <p class="category-desc">Hand-crimped parcels stuffed with fresh, seasoned farm harvest.</p>
+                
+                <div class="menu-item-row">
+                    <span class="item-name">Steamed Garden Greens</span>
+                    <p>&#x20B9 180</p>
+                    <button class="btn" onclick="orderItem('Veg momos')">Order</button>
+                </div>
+                <div class="menu-item-row">
+                    <span class="item-name">Herbed Paneer Dimsum</span>
+                    <p>&#x20B9 210</p>
+                    <button class="btn" onclick="orderItem('paneer momos')">Order</button>
+                </div>
+                <div class="menu-item-row">
+                    <span class="item-name">Spicy Chili & Cream Cheese</span>
+                    <p>&#x20B9 240</p>
+                    <button class="btn" onclick="orderItem('extra cheese momos')">Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="main-footer">
+    <p>© 2026 The Lillique. Made for slow evenings.</p>
+    <p style="font-size: 0.8rem; color: var(--terracotta); margin-top: 12px; font-weight: 500; letter-spacing: 1px;">JOIN US TO MAKE IT MORE SPECIAL </p>
+    <!--cart-button-->
+    <div class="cart-floating-trigger" onclick="toggleCart()">
+        <span>Cart</span>
+        <span id="cart-pill-count" class="cart-badge">0</span>
+    </div>
+</footer>
+</div>
+
+<!--slidebar-->
+<div id="cart-drawer" class="cart-drawer-panel">
+    <div class="cart-drawer-header">
+        <h3>Your Selection</h3>
+        <button class="cart-close-btn" onclick="toggleCart()">✕</button>
+    </div>
+  
+  <!--cart-container-->
+    <div id="cart-items-wrapper" class="cart-items-body">
+        <p class="empty-cart-msg">Your Cart is currently empty.</p>
+    </div>
+  
+    <div class="cart-drawer-footer">
+        <div class="cart-total-row">
+            <span>Subtotal:</span>
+            <span id="cart-total-price">₹0.00</span>
+        </div>
+        <button class="checkout-btn" onclick="checkoutMock()">Proceed to Checkout</button>
+    </div>
+</div>
+<div id="custom-popup-modal" class="popup-modal-overlay">
+    <div class="popup-modal-card">
+        <div class="popup-modal-flower">✿</div>
+        <h3 id="popup-modal-title"></h3>
+        <p id="popup-modal-message"></p>
+        <button class="popup-modal-close-btn" onclick="closeCustomPopup()">Return to Page</button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="page-wrapper">
+
+<header class="main-header">
+    <div class="header-logo">The Lillique</div>
+    <p class="tagline">A little home between hunger and heart</p>
+</header>
+
+<nav class="navbar">
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html" class="active">Menu</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="reservation.html">Reservation</a>
+        <a href="events.html">Events</a>
+    </div>
+</nav>
+
+<section class="container">
+    <div class="section-title">
+        <span>CURATED SELECTION</span>
+        <h2>Our Lillicious Menu</h2>
+        <div class="boho-divider"><span>✿</span></div>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <div class="img-container">
+                <img src="images/momo.jpeg" alt="Steamed Dumplings">
+            </div>
+            <div class="card-content">
+                <h3>Artisan Dumplings</h3>
+                <p class="category-desc">Hand-crimped parcels stuffed with fresh, seasoned farm harvest.</p>
+                
+                <div class="menu-item-row">
+                    <span class="item-name">Steamed Garden Greens</span>
+                    <p>&#x20B9; 180</p>
+                    <button class="btn" onclick="orderItem('Veg momos')">Order</button>
+                </div>
+                <div class="menu-item-row">
+                    <span class="item-name">Herbed Paneer Dimsum</span>
+                    <p>&#x20B9; 210</p>
+                    <button class="btn" onclick="orderItem('paneer momos')">Order</button>
+                </div>
+                <div class="menu-item-row">
+                    <span class="item-name">Spicy Chili & Cream Cheese</span>
+                    <p>&#x20B9; 240</p>
+                    <button class="btn" onclick="orderItem('extra cheese momos')">Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="images/pizza.jpeg" alt="Artisan Pizza">
+            </div>
+            <div class="card-content">
+                <h3>Sourdough Pizzas</h3>
+                <p class="category-desc">Wild yeast crust, heirloom tomatoes, fresh pulled mozzarella.</p>
+                
+                <div class="menu-item-row">
+                    <span class="item-name">Margarita Garden</span>
+                    <p>&#x20B9; 345</p>
+                    <button class="btn" onclick="orderItem('Margarita Pizza')">Order</button>
+                </div>
+                <div class="menu-item-row">
+                    <span class="item-name">Rustic Paneer Pizza</span>
+                    <p>&#x20B9; 395</p>
+                    <button class="btn" onclick="orderItem('Paneer Pizza')">Order</button>
+                </div>
+                <div class="menu-item-row">
+                    <span class="item-name">Sweet Red Pepper</span>
+                    <p>&#x20B9; 375</p>
+                    <button class="btn" onclick="orderItem('Red pepper')">Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="images/burger.jpeg" alt="Gourmet Burger">
+            </div>
+            <div class="card-content">
+                <h3>House Burgers</h3>
+                <p class="category-desc">Served on house-baked sweet potato brioche with crisp greens.</p>
+                
+                <div class="menu-item-row">
+                    <span class="item-name">Harvest Veg Burger</span>
+                    <p>&#x20B9; 195</p>
+                    <button class="btn" onclick="orderItem('Veg Burger')">Order</button>
+                </div>
+                <div class="menu-item-row">
+                    <span class="item-name">Spiced Paneer Burger</span>
+                    <p>&#x20B9; 245</p>
+                    <button class="btn" onclick="orderItem('Paneer Burger')">Order</button>
+                </div>
+                <div class="menu-item-row">
+                    <span class="item-name">Umami Korean Burger</span>
+                    <p>&#x20B9; 275</p>
+                    <button class="btn" onclick="orderItem('Korean Burger')">Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="images/pasta.jpeg" alt="Handmade Pasta">
+            </div>
+            <div class="card-content">
+                <h3>Handmade Pasta</h3>
+                <p class="category-desc">Freshly rolled daily, tossed gently with aromatic garden herbs.</p>
+                
+                <div class="menu-item-row">
+                    <span class="item-name">Sun-dried Red Sauce</span>
+                    <p>&#x20B9; 295</p>
+                    <button class="btn" onclick="orderItem('Red Sauce Pasta')">Order</button>
+                </div>
+                <div class="menu-item-row">
+                    <span class="item-name">Slow-Simmered Alfredo</span>
+                    <p>&#x20B9; 325</p>
+                    <button class="btn" onclick="orderItem('White Sauce Pasta')">Order</button>
+                </div>
+                <div class="menu-item-row">
+                    <span class="item-name">Three-Cheese Herb</span>
+                    <p>&#x20B9; 345</p>
+                    <button class="btn" onclick="orderItem('Veg Cheese Pasta')">Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="images/fries.jpeg" alt="Handcut Fries">
+            </div>
+            <div class="card-content">
+                <h3>Handcut Wedges</h3>
+                <p class="category-desc">Skin-on local potatoes, triple cooked and lightly tossed.</p>
+                
+                <div class="menu-item-row">
+                    <span class="item-name">Sea Salt & Rosemary</span>
+                    <p>&#x20B9; 125</p>
+                    <button class="btn" onclick="orderItem('Basic Fries')">Order</button>
+                </div>
+                <div class="menu-item-row">
+                    <span class="item-name">Smoked Peri Peri</span>
+                    <p>&#x20B9; 145</p>
+                    <button class="btn" onclick="orderItem('Peri Peri')">Order</button>
+                </div>
+                <div class="menu-item-row">
+                    <span class="item-name">Warm Cheese Fondue Fries</span>
+                    <p>&#x20B9; 185</p>
+                    <button class="btn" onclick="orderItem('Cheese Fries')">Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="images/coffee.jpeg" alt="Pour Over Coffee">
+            </div>
+            <div class="card-content">
+                <h3>Slow Bar Coffee</h3>
+                <p class="category-desc">Ethically sourced, sun-dried beans with distinct floral notes.</p>
+                
+                <div class="menu-item-row">
+                    <span class="item-name">Oat Milk Iced Latte</span>
+                    <p>&#x20B9; 165</p>
+                    <button class="btn" onclick="orderItem('Iced latte')">Order</button>
+                </div>
+                <div class="menu-item-row">
+                    <span class="item-name">Vintage French Press</span>
+                    <p>&#x20B9; 120</p>
+                    <button class="btn" onclick="orderItem('Black coffee')">Order</button>
+                </div>
+                <div class="menu-item-row">
+                    <span class="item-name">Honey Sea Salt Cold Brew</span>
+                    <p>&#x20B9; 150</p>
+                    <button class="btn" onclick="orderItem('Cold coffee')">Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="https://img.magnific.com/free-photo/rich-layered-chocolate-berry-dessert-glass_84443-82023.jpg" alt="Rich Layered Chocolate Berry Dessert">
+            </div>
+            <div class="card-content">
+                <h3>Desserts</h3>
+                <p class="category-desc">Decadent luxury sweets prepared fresh by our master pastry chef.</p>
+                
+                <div class="menu-item-row">
+                    <span class="item-name">Ice Cream Selection</span>
+                    <p>&#x20B9; 145</p>
+                    <button class="btn" onclick="orderItem('Ice Cream Selection')">Order</button>
+                </div>
+                <div class="menu-item-row">
+                    <span class="item-name">Artisan Tiramisu</span>
+                    <p>&#x20B9; 195</p>
+                    <button class="btn" onclick="orderItem('Artisan Tiramisu')">Order</button>
+                </div>
+                <div class="menu-item-row">
+                    <span class="item-name">Fudge Brownie</span>
+                    <p>&#x20B9; 225</p>
+                    <button class="btn" onclick="orderItem('Fudge Brownie')">Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="images/appetizer.jpg" alt="Appetizers">
+            </div>
+            <div class="card-content">
+                <h3>Appetizers</h3>
+                <p class="category-desc">Crispy golden starters crafted perfectly to awaken your palate.</p>
+                
+                <div class="menu-item-row">
+                    <span class="item-name">Garlic Bread Platter</span>
+                    <p>&#x20B9; 225</p>
+                    <button class="btn" onclick="orderItem('Garlic Bread Platter')">Order</button>
+                </div>
+                <div class="menu-item-row">
+                    <span class="item-name">Garden Spring Rolls</span>
+                    <p>&#x20B9; 250</p>
+                    <button class="btn" onclick="orderItem('Garden Spring Rolls')">Order</button>
+                </div>
+                <div class="menu-item-row">
+                    <span class="item-name">Crispy Cheese Balls</span>
+                    <p>&#x20B9; 280</p>
+                    <button class="btn" onclick="orderItem('Crispy Cheese Balls')">Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="images/meal.jpg" alt="Hearty Meals">
+            </div>
+            <div class="card-content">
+                <h3>Hearty Meals</h3>
+                <p class="category-desc">Wholesome, filling signature slow-cooked gourmet main dishes.</p>
+                
+                <div class="menu-item-row">
+                    <span class="item-name">Harvest Rice Bowl</span>
+                    <p>&#x20B9; 365</p>
+                    <button class="btn" onclick="orderItem('Harvest Rice Bowl')">Order</button>
+                </div>
+                <div class="menu-item-row">
+                    <span class="item-name">Classic Lasagna</span>
+                    <p>&#x20B9; 395</p>
+                    <button class="btn" onclick="orderItem('Classic Lasagna')">Order</button>
+                </div>
+                <div class="menu-item-row">
+                    <span class="item-name">Stuffed Veggie Bread combo</span>
+                    <p>&#x20B9; 450</p>
+                    <button class="btn" onclick="orderItem('Stuffed Veggie Bread combo')">Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="images/soup.jpg" alt="Wholesome Soups">
+            </div>
+            <div class="card-content">
+                <h3>Wholesome Soups</h3>
+                <p class="category-desc">Warm, comforting broths infused beautifully with fresh garden herbs.</p>
+                
+                <div class="menu-item-row">
+                    <span class="item-name">Corn & Spinach Simmer</span>
+                    <p>&#x20B9; 135</p>
+                    <button class="btn" onclick="orderItem('Corn & Spinach Simmer')">Order</button>
+                </div>
+                <div class="menu-item-row">
+                    <span class="item-name">Fennel Roasted Carrot</span>
+                    <p>&#x20B9; 145</p>
+                    <button class="btn" onclick="orderItem('Fennel Roasted Carrot')">Order</button>
+                </div>
+                <div class="menu-item-row">
+                    <span class="item-name">Aromatic Spring Soup</span>
+                    <p>&#x20B9; 195</p>
+                    <button class="btn" onclick="orderItem('Aromatic Spring Soup')">Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="main-footer">
+    <p>© 2026 The Lillique. Made for slow afternoons.</p>
+    
+    <div class="cart-floating-trigger" onclick="toggleCart()">
+      <span>Cart</span>
+      <span id="cart-pill-count" class="cart-badge">0</span>
+    </div>
+
+    </footer>
+</div> <div id="cart-drawer" class="cart-drawer-panel">
+  <div class="cart-drawer-header">
+    <h3>Your Selection</h3>
+    <button class="cart-close-btn" onclick="toggleCart()">✕</button>
+  </div>
+  
+  <div id="cart-items-wrapper" class="cart-items-body">
+    <p class="empty-cart-msg">Your Cart is currently empty.</p>
+  </div>
+  
+  <div class="cart-drawer-footer">
+    <div class="cart-total-row">
+      <span>Total:</span>
+      <span id="cart-total-price">₹0.00</span>
+    </div>
+    <button class="checkout-btn" onclick="checkoutMock()">Proceed to Checkout</button>
+  </div>
+</div>
+
+<div id="custom-popup-modal" class="popup-modal-overlay">
+  <div class="popup-modal-card">
+    <div class="popup-modal-flower">✿</div>
+    <h3 id="popup-modal-title"></h3>
+    <p id="popup-modal-message"></p>
+    <button class="popup-modal-close-btn" onclick="closeCustomPopup()">Return to Page</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

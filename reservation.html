@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="reservation-style.css">
+</head>
+<body>
+
+<div id="page-wrapper">
+
+<header class="main-header">
+    <div class="header-logo">The Lillique</div>
+    <p class="tagline">A little home between hunger and heart</p>
+</header>
+
+<nav class="navbar">
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="reservation.html" class="active">Reservation</a>
+        <a href="events.html">Events</a>
+    </div>
+</nav>
+
+<main class="container">
+    
+    <div class="ledger-container">
+        
+        <div class="ledger-header">
+            <span class="ledger-sub">SECURE A CORNER WITH US</span>
+            <h2>Table Reservation & Experience Booking</h2>
+            <div class="boho-divider"><span>✿</span></div>
+            <p class="ledger-intro">
+                Whether you're escaping for a peaceful meal, reconnecting over familiar flavors, or marking a meaningful occasion, our doors and tables are ready to welcome you.
+            </p>
+        </div>
+
+        <form action="#" class="ledger-form" onsubmit="event.preventDefault(); showCustomPopup('Experience Secured', 'Your Details have drifted safely into our reservations. A confirmation text has been routed to your device.✨');">
+            
+            <div class="session-picker" style="display: flex; flex-direction: column; gap: 15px; margin-bottom: 25px;">
+                <span style="font-size: 0.85rem; letter-spacing: 1px; font-weight: 500; text-transform: uppercase; color: #888; text-align: center; display: block; margin-bottom: 5px;">Choose Your Experience Track</span>
+                
+                <div class="session-row" style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+                    <label class="session-option">
+                        <input type="radio" name="dining_session" value="lunch" checked onclick="toggleEventSelection(false)">
+                        <span class="session-box">Regular Lunch 🌿 </span>
+                    </label>
+                    <label class="session-option">
+                        <input type="radio" name="dining_session" value="dinner" onclick="toggleEventSelection(false)">
+                        <span class="session-box">Regular Dinner 🌙</span>
+                    </label>
+                </div>
+
+                <div class="session-row" style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+                    <label class="session-option">
+                        <input type="radio" name="dining_session" value="signature_event" onclick="toggleEventSelection(true)">
+                        <span class="session-box">Weekly Signature Gathering ✨ </span>
+                    </label>
+                    <label class="session-option">
+                        <input type="radio" name="dining_session" value="private_celebration" onclick="toggleEventSelection(true)">
+                        <span class="session-box"> Private Event Space 🥂</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-fields-grid">
+                
+                <div class="field-node full-width" id="event-dropdown-wrapper" style="display: none; margin-bottom: 15px;">
+                    <label for="experience_vector">Select Specific Event / Celebration Track</label>
+                    <select id="experience_vector">
+                        <option value="">Choose a Track </option>
+                        <optgroup label="Upcoming Headliners & Weekly Gatherings">
+                            <option value="solstice">Solstice Acoustic & Sourdough (Saturday, June 13)</option>
+                            <option value="chefs_table">Chef's Special Tasting (Thursdays, 8:00 PM)</option>
+                            <option value="game_night">Family Game Night (Tuesdays, 6:30 PM)</option>
+                            <option value="candlelit_block">Candlelit Dinner Block (Wednesdays, 7:00 PM)</option>
+                            <option value="brunch_fiesta">Weekend Brunch Fiesta (Sat & Sun, 11 AM - 3 PM)</option>
+                            <option value="live_music">Live Music Night (Fridays, 8:30 PM)</option>
+                            <option value="cooking_theatre">Live Cooking Theatre (Bi-Weekly Mondays, 7:00 PM)</option>
+                        </optgroup>
+                        <optgroup label="Private Milestones">
+                            <option value="private_birthday">Private Birthday Celebration (Custom Desserts & Florals)</option>
+                            <option value="private_anniversary">Private Anniversary (Secluded Alcove & Custom Menu)</option>
+                            <option value="private_corporate">Boutique Corporate Gathering (High-Speed Networks & Quiet Breaks)</option>
+                            <option value="private_communal">Family & Friend Circles (Large Communal Tables)</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="field-node">
+                    <label for="guest_name">Host Name</label>
+                    <input type="text" id="guest_name" placeholder="e.g., Ishaan Verma" required>
+                </div>
+
+                <div class="field-node">
+                    <label for="phone_number">Contact Number</label>
+                    <input type="tel" id="phone_number" placeholder="+91 XXXXX XXXXX" required>
+                </div>
+
+                <div class="field-node">
+                    <label for="reserve_date">Preferred Date</label>
+                    <input type="date" id="reserve_date" required>
+                </div>
+
+                <div class="field-node">
+                    <label for="guest_count">Party Size (Guests)</label>
+                    <input type="number" id="guest_count" min="1" max="50" placeholder="e.g., 2" required>
+                </div>
+
+            </div>
+
+            <div class="field-node full-width">
+                <label for="special_notes">Dietary Notes / Custom Theme or Placement Requests</label>
+                <textarea id="special_notes" rows="3" placeholder="e.g., Window seat request, gluten allergies, high-chair requirement, or milestone preferences..."></textarea>
+            </div>
+
+            <div class="action-wrapper">
+                <button type="submit" class="boho-reserve-btn">Confirm & Book</button>
+                <p class="policy-note">Tables are held strictly for up to 15 minutes past schedule blocks. For custom private event menus, a team coordinator will reach out to your device within 24 hours.</p>
+            </div>
+
+        </form>
+
+    </div>
+
+</main>
+
+<footer class="main-footer">
+    <p>© 2026 • The Lillique. Made for slow afternoons.</p>
+</footer>
+</div> <div id="custom-popup-modal" class="popup-modal-overlay">
+  <div class="popup-modal-card">
+    <div class="popup-modal-flower">✿</div>
+    <h3 id="popup-modal-title">Notification</h3>
+    <p id="popup-modal-message">Your message text goes here.</p>
+    <button class="popup-modal-close-btn" onclick="closeCustomPopup()">Return to Page</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+<script>
+function toggleEventSelection(showDropdown) {
+    const dropdownWrapper = document.getElementById('event-dropdown-wrapper');
+    const eventSelect = document.getElementById('experience_vector');
+    
+    if (showDropdown) {
+        dropdownWrapper.style.display = 'block';
+        eventSelect.setAttribute('required', 'required');
+    } else {
+        dropdownWrapper.style.display = 'none';
+        eventSelect.removeAttribute('required');
+        eventSelect.value = ''; 
+    }
+}
+</script>
+
+</body>
+</html>
