@@ -1,4 +1,4 @@
-/*colorfont-palette */
+
 * {
   margin: 0;
   padding: 0;
@@ -6,12 +6,12 @@
 }
 
 :root {
-  --warm-ivory: rgba(204, 179, 129, 0.88);      /* Clean, bright oatmeal/ivory background */
-  --soft-cream: #f3efed;      /* Pastel warm sand tone for cards/nav */
-  --terracotta: #6e4435;      /* Muted boho clay pink/terracotta accent */
-  --sage-green: #2b4b25;      /* Vintage pastel sage green */
-  --earthy-brown: #483837;    /* Soft deep cocoa instead of harsh black text */
-  --text-muted: #4a3d3c;      /* Soft faded charcoal for minor descriptions */
+  --warm-ivory: rgba(204, 179, 129, 0.88);    
+  --soft-cream: #f3efed;      
+  --terracotta: #6e4435;      
+  --sage-green: #2b4b25;      
+  --earthy-brown: #483837;  
+  --text-muted: #4a3d3c;      
   --font-serif: 'Playfair Display', Georgia, serif;
   --font-sans: 'Plus Jakarta Sans', Arial, sans-serif;
 }
@@ -24,7 +24,6 @@ body {
   line-height: 1.6;
 }
 
-/*header-navigations*/
 .main-header {
   background: var(--warm-ivory);
   padding: 50px 20px 25px 20px;
@@ -96,7 +95,6 @@ body {
   width: 100%;
 }
 
-/*middle-section*/
 .text {
   height: 60vh;
   display: flex;
@@ -168,19 +166,18 @@ body {
   background-color: var(--earthy-brown);
   color: var(--warm-ivory);
 }
-/*middle-text,img&badge*/
 
 .text {
   display: flex;
   align-items: center;
-  justify-content: space-around; /* Spaced out content and image */
+  justify-content: space-around; /
   padding: 0 5%;
-  overflow: visible; /* Allows badge to peek out */
+  overflow: visible; 
 }
 
 .text-img-wrapper {
   position: relative;
-  width: 320px; /* Precise "proper" size for the arch */
+  width: 320px; 
   height: 420px;
   display: flex;
   align-items: center;
@@ -191,10 +188,10 @@ body {
 .arch-frame {
   width: 100%;
   height: 100%;
-  border-radius: 160px 160px 20px 20px; /* Modern Boho Arch shape */
+  border-radius: 160px 160px 20px 20px; 
   overflow: hidden;
   box-shadow: 0 20px 40px rgba(74, 62, 61, 0.15);
-  border: 8px solid var(--soft-cream); /* Frame effect */
+  border: 8px solid var(--soft-cream); 
 }
 
 .text-img {
@@ -206,9 +203,7 @@ body {
 
 .badge-container {
   position: absolute;
-  /* Overlaps bottom edge */
-   /* Overlaps side for that editorial look */
-  width: 140px;  /* Size of the circular text */
+  width: 140px; 
   height: 140px;
   z-index: 10;
 }
@@ -219,7 +214,6 @@ body {
   animation: spin 15s linear infinite;
 }
 
-/*animation*/
 @keyframes spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
@@ -230,7 +224,6 @@ body {
   100% { opacity: 1; transform: translateY(0); }
 }
 
-/*mobile-tweak*/
 @media (max-width: 900px) {
   .text {
     flex-direction: column;
@@ -244,7 +237,6 @@ body {
   }
 }
 
-/*section-titles*/
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -289,7 +281,6 @@ body {
   margin: 0 15px;
 }
 
-/*card-designing*/
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -298,7 +289,7 @@ body {
 
 .card {
   background: var(--soft-cream);
-  border-radius: 20px; /* Whimsical, warm curved design */
+  border-radius: 20px; 
   overflow: hidden;
   border: 1px solid rgba(138, 154, 134, 0.1);
   box-shadow: 0 10px 30px rgba(74, 62, 61, 0.04);
@@ -718,7 +709,7 @@ body {
 }
 
 .pillar-card {
-    background: rgba(243, 239, 237, 0.4); /* Subtle transparent tint of soft-cream */
+    background: rgba(243, 239, 237, 0.4);
     padding: 35px 25px;
     border-radius: 15px;
     text-align: center;
