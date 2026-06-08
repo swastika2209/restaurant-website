@@ -59,16 +59,16 @@ function orderItem(itemKey) {
     
     saveCartToStorage(); 
     updateCartUI();
+  
     const drawer = document.getElementById('cart-drawer');
-    if (drawer) drawer.classList.add('open');
-    
+    if (drawer) drawer.classList.add('active');
 }
 
 function toggleCart() {
-     const drawer = document.getElementById("cart-drawer");
+    const drawer = document.getElementById("cart-drawer");
     const page = document.getElementById("page-wrapper");
 
-    if (drawer) drawer.classList.toggle("open");
+    if (drawer) drawer.classList.toggle("active");
     if (page) page.classList.toggle("cart-open");
 }
 
