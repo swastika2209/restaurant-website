@@ -52,3 +52,4 @@ Open `index.html` directly in your browser or use the Live Server extension in V
 ## 🚀 Live Demo & Preview
 
 * **Live Site:** https://swastika2209.github.io/restaurant-website/
+* **Source code:** https://github.com/swastika2209/restaurant-website
